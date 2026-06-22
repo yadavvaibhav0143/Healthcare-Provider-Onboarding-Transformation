@@ -70,3 +70,29 @@ CREATE TABLE OnboardingTransactions (
         CHECK (COALESCE(approval_timestamp, verification_timestamp, submission_timestamp) >= submission_timestamp)   
 
 );
+
+-- =============================================================
+-- PORTFOLIO ASSET: DATA INITIALIZATION SEED SCRIPTS
+-- OBJECTIVE: CORE SEED DATA FOR INTERVIEW DEMONSTRATIONS
+-- =============================================================
+
+-- 1. Seed National Registry Master Source Data
+INSERT INTO RegistriesMaster (registration_number, doctor_name, medical_specialty, license_status) 
+VALUES
+('MH12345', 'Dr. Priya Sharma', 'Cardiology', 'Active'),
+('MH67890', 'Dr. Raj Mehta', 'Orthopedics', 'Active'),
+('KA11223', 'Dr. Sneha Iyer', 'Pediatrics', 'Suspended');
+
+-- 2. Seed Internal Healthcare Provider Profile Management Records
+INSERT INTO ProvidersMaster (provider_id, registration_number, provider_name, specialty, network_status, activation_status) 
+VALUES
+(101, 'MH12345', 'Dr. Priya Sharma', 'Cardiology', 'In-Network', 'Active'),
+(102, 'MH67890', 'Dr. Raj Mehta', 'Orthopedics', 'Out-of-Network', 'Inactive');
+
+-- 3. Seed Onboarding Operational Performance Transactions
+INSERT INTO OnboardingTransactions (application_id, provider_id, registration_number, submission_timestamp, verification_timestamp, approval_timestamp, application_status, rejection_reason) 
+VALUES
+(1001, 101, 'MH12345', '2026-06-01 09:00:00', '2026-06-01 11:00:00', '2026-06-02 08:00:00', 'Approved', NULL),
+(1002, 102, 'MH67890', '2026-06-03 10:00:00', '2026-06-03 14:00:00', '2026-06-05 09:00:00', 'Approved', NULL),
+(1003, 102, 'MH67890', '2026-06-10 12:00:00', '2026-06-10 13:00:00', NULL, 'Rejected', 'Document Mismatch'),
+(1004, 101, 'MH12345', '2026-06-15 14:00:00', NULL, NULL, 'Pending', NULL);
