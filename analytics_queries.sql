@@ -43,7 +43,7 @@ GROUP BY rejection_reason;
 
 
 -- =============================================================
--- QUERY 3: CLINICAL SPECIALTY REGISTRATION VELOCITY (Senior-Tier Proof)
+-- QUERY 3: Provider Onboarding Activity by Specialty
 -- Uses advanced Window Logic to track sequence spacing across specialties.
 -- =============================================================
 SELECT 
