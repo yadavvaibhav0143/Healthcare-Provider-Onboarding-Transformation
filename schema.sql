@@ -64,7 +64,7 @@ CREATE TABLE OnboardingTransactions (
 
     CONSTRAINT fk_registration_number
     FOREIGN KEY (registration_number)
-    REFERENCES RegistriesMaster(registration_number)
+    REFERENCES RegistriesMaster(registration_number),
 
     CONSTRAINT chk_onboarding_dates 
         CHECK (COALESCE(approval_timestamp, verification_timestamp, submission_timestamp) >= submission_timestamp)   
