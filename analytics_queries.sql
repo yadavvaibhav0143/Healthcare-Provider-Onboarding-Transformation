@@ -6,7 +6,7 @@
 
 -- =============================================================
 -- QUERY 1: CALCULATING ONBOARDING SLA COMPLIANCE (Slide 13 Metric)
--- Tracks turnaround speeds with built-in system crash protections.
+-- Calculates onboarding SLA compliance and average processing time.
 -- =============================================================
 WITH SLAProcessingIntervals AS (
     SELECT
