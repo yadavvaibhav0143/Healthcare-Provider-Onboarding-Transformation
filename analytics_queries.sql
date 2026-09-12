@@ -1,11 +1,10 @@
 -- =============================================================
 -- PORTFOLIO ASSET: HEALTHCARE PROVIDER ONBOARDING DATA MODEL
 -- ADVANCED OPERATIONAL KPIS (CTEs & WINDOW FUNCTIONS)
--- SYSTEM REFERENCE: SLIDE 13 & SLIDE 19 REPORTING DEPLOYMENTS
 -- =============================================================
 
 -- =============================================================
--- QUERY 1: CALCULATING ONBOARDING SLA COMPLIANCE (Slide 13 Metric)
+-- QUERY 1: CALCULATING ONBOARDING SLA COMPLIANCE
 -- Calculates onboarding SLA compliance and average processing time.
 -- =============================================================
 WITH SLAProcessingIntervals AS (
@@ -30,7 +29,7 @@ FROM SLAProcessingIntervals;
 
 
 -- =============================================================
--- QUERY 2: IDENTIFYING PIPELINE VERIFICATION BOTTLENECKS (Slide 19 Metric)
+-- QUERY 2: IDENTIFYING PIPELINE VERIFICATION BOTTLENECKS
 -- Ranks operational failure points dynamically using Window Partitioning.
 -- =============================================================
 SELECT
