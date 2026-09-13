@@ -1,6 +1,6 @@
 # Healthcare Digital Platform — Business Analysis & Solution Design
 
-**HealthTech | Provider Lifecycle | Digital Healthcare Operations**
+**HealthTech | Provider Lifecycle | Patient Care | Digital Healthcare Operations**
 
 ## Overview
 
@@ -14,7 +14,7 @@ operational analytics.
 
 ## My Role
 
-Independent Business Analyst
+**Independent Business Analyst**
 
 I worked across the requirements lifecycle — from problem analysis and
 process mapping through functional requirements, solution design, data
@@ -24,7 +24,7 @@ modelling, API specifications, user stories, UAT, and analytics.
 
 The existing process involved:
 
-- Manual provider/document verification
+- Manual provider and document verification
 - Multiple operational handoffs
 - Limited visibility into pending cases and SLA performance
 - Delays in provider activation
@@ -35,37 +35,29 @@ The existing process involved:
 The case study redesigns the provider lifecycle from registration through
 verification, approval/exception handling, and activation.
 
-The solution also considers integrations with provider verification,
-payment, and notification services.
+The solution also considers integrations with provider verification, payment,
+and notification services.
 
 ## Key BA Work
 
 - AS-IS and TO-BE process analysis
 - Stakeholder analysis
-- BRD and functional requirements
-- Business rules
-- User stories and Gherkin acceptance criteria
-- Functional solution architecture
-- ERD and data dictionary
-- REST API contracts
-- UAT and RTM
-- PostgreSQL-based analytics
-- Tableau operational dashboard
-
-## Repository
-
-This repository contains the supporting artefacts for the case study,
-including the business analysis documentation, process diagrams,
-requirements, technical specifications, data model, SQL analysis, API
-specifications, UAT pack, and dashboard.
+- BRD and Functional Requirements
+- 16 Functional Requirements
+- 8 Business Rules
+- Functional Solution Architecture
+- 8-entity conceptual ERD and Data Dictionary
+- 3 REST API Contracts
+- 16 Agile User Stories with Gherkin Acceptance Criteria
+- UAT and Requirements Traceability Matrix (RTM)
 
 ## Data & Analytics
 
-The project includes a focused PostgreSQL analytics model built from
+The project includes a focused **PostgreSQL** analytics model built from
 sample onboarding data.
 
-The analysis covers onboarding turnaround time, approval rate, SLA
-compliance, pending verification, rejection reasons, and provider
+The analysis covers onboarding turnaround time, provider approval rate,
+SLA compliance, pending verification, rejection reasons, and provider
 activation.
 
 > **Note:** The conceptual solution covers the broader healthcare platform
@@ -80,15 +72,51 @@ The proposed TO-BE process targets a reduction in average onboarding
 turnaround from **5 business days to <24 hours**, alongside improved SLA
 visibility and reduced manual verification effort.
 
-These are **target outcomes of the case study, not measured production
-results**.
+> **Note:** These are target outcomes of the case study, not measured
+> production results.
+
+## Repository
+
+The repository contains the core project documentation, data and analytics
+assets, SQL execution evidence, and dashboard output:
+
+- [Business Analysis & Solution Design]
+- [PostgreSQL Schema](./schema.sql)
+- [Sample Dataset](./healthcare_onboarding_data.xlsx)
+- [SQL Analytics Queries](./analytics_queries.sql)
+- [SQL Execution Results](./sql-query-execution-results.png)
+- [Tableau Dashboard](./Tableau_Dashboard.png)
+
+## Preview
+
+### Healthcare Provider Onboarding Operations Dashboard
+
+![Healthcare Provider Onboarding Operations Dashboard](./Tableau_Dashboard.png)
 
 ## What This Project Demonstrates
 
 **Business Analysis → Process Design → Requirements → Solution Design →
 Technical Specification → UAT → Data & Analytics**
 
-## Documentation
+- End-to-end requirements lifecycle
+- Business process analysis and TO-BE design
+- Functional and technical requirements
+- Data modelling and SQL analysis
+- REST API specification
+- Agile user-story development
+- UAT and requirements traceability
+- Translating operational problems into measurable business outcomes
 
-See the project artefacts in this repository for the complete Business
-Analysis & Solution Design.
+## Tools & Technologies
+
+**Business Analysis & Documentation:**  
+Microsoft Word · Microsoft PowerPoint
+
+**Process & Data Modelling:**  
+Lucidchart
+
+**Data & Analytics:**  
+PostgreSQL · SQL · Tableau
+
+**Technical Specification:**  
+REST APIs · JSON
