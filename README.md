@@ -80,7 +80,7 @@ visibility and reduced manual verification effort.
 The repository contains the core project documentation, data and analytics
 assets, SQL execution evidence, and dashboard output:
 
-- [Business Analysis & Solution Design]
+- [Business Analysis & Solution Design](./Healthcare%20Digital%20Platform%20%E2%80%94%20Business%20Analysis.Doc.pdf)
 - [PostgreSQL Schema](./schema.sql)
 - [Sample Dataset](./healthcare_onboarding_data.xlsx)
 - [SQL Analytics Queries](./analytics_queries.sql)
