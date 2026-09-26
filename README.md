@@ -43,7 +43,7 @@ and notification services.
 - AS-IS and TO-BE process analysis
 - Stakeholder analysis
 - BRD and Functional Requirements
-- 16 Functional Requirements
+- 17 Functional Requirements
 - 8 Business Rules
 - Functional Solution Architecture
 - 8-entity conceptual ERD and Data Dictionary
@@ -80,18 +80,19 @@ visibility and reduced manual verification effort.
 The repository contains the core project documentation, data and analytics
 assets, SQL execution evidence, and dashboard output:
 
-- [Business Analysis & Solution Design](./Healthcare%20Digital%20Platform%20%E2%80%94%20Business%20Analysis.Doc.pdf)
+- [Business Analysis & Solution Design](./Healthcare%20Digital%20Platform%20%E2%80%94%20Business%20Analysis.pdf)
 - [PostgreSQL Schema](./schema.sql)
 - [Sample Dataset](./healthcare_onboarding_data.xlsx)
 - [SQL Analytics Queries](./analytics_queries.sql)
-- [SQL Execution Results](./sql-query-execution-results.png)
-- [Tableau Dashboard](./Tableau_Dashboard.png)
+- [SQL Execution Results — Query 1](./Query.1.png)
+- [SQL Execution Results — Query 2](./Query.2.png)
+- [Tableau Dashboard](./Healthcare_Dash.png)
 
 ## Preview
 
 ### Healthcare Provider Onboarding Operations Dashboard
 
-![Healthcare Provider Onboarding Operations Dashboard](./Tableau_Dashboard.png)
+![Healthcare Provider Onboarding Operations Dashboard](./Healthcare_Dash.png)
 
 ## What This Project Demonstrates
 
