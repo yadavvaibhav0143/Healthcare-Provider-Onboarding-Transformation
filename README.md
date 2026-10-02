@@ -87,11 +87,13 @@ assets, SQL execution evidence, and dashboard output:
 - [SQL Analytics Queries](./analytics_queries.sql)
 - [SQL Execution Results — Query 1](./Query.1.png)
 - [SQL Execution Results — Query 2](./Query.2.png)
-- [Tableau Dashboard](./Healthcare_Dash.png)
+- [View Tableau Dashboard](https://public.tableau.com/app/profile/vaibhav.yadav6144/viz/Book2_17903339630900/Dashboard)
 
 ## Preview
 
 ### Healthcare Provider Onboarding Operations Dashboard
+
+[🔗 View Interactive Tableau Dashboard](https://public.tableau.com/app/profile/vaibhav.yadav6144/viz/Book2_17903339630900/Dashboard)
 
 ![Healthcare Provider Onboarding Operations Dashboard](./Healthcare_Dash.png)
 
